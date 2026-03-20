@@ -36,9 +36,10 @@ public class BasePage {
         return element.getText();
     }
 
+    // fix: antes usaba wait aca y tardaba mucho cuando el elemento no existia
+    // cambie para que solo haga isDisplayed sin esperar
     protected boolean isDisplayed(WebElement element) {
         try {
-            wait.until(ExpectedConditions.visibilityOf(element));
             return element.isDisplayed();
         } catch (Exception e) {
             return false;
