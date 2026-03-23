@@ -29,7 +29,7 @@ public class TC005_LogoutTest extends BaseTest {
 
         LoginPage loginPage = new LoginPage(driver);
         Assert.assertTrue(loginPage.isLoginButtonDisplayed(),
-            "No se redirigeo al login despues del logout");
+            "No se redirigio al login despues del logout");
     }
 
     @Test(description = "SHOP-501 | URL despues de logout es la de login")
