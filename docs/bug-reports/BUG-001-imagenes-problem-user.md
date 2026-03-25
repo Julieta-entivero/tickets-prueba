@@ -1,4 +1,4 @@
-# BUG-001: Imagenes incorrectas con problem_user
+# BUG-001: Imagenes incorrectas con problem user
 **Ticket relacionado:** SHOP-201
 **Severidad:** Alta
 **Prioridad:** Media
@@ -7,10 +7,9 @@
 **Fecha:** 18/03/2026
 **Ambiente:** Chrome 122 / Windows 11
 
----
 
 ## Descripcion
-Al loguearse con el usuario `problem_user`, todas las imagenes de los productos muestran la misma imagen (la del primer producto). No se corresponden con el producto real.
+Al loguearse con el usuario 'problem_user', todas las imagenes de los productos muestran la misma imagen (la del primer producto). No se corresponden con el producto real.
 
 ## Pasos para reproducir
 1. Ir a https://www.saucedemo.com/
