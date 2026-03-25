@@ -2,9 +2,6 @@
 **Tickets:** SHOP-401, SHOP-402, SHOP-403
 **Modulo:** Proceso de Compra
 **QA:** Julieta Entivero
-**Ultima actualizacion:** 21/03/2026
-
----
 
 ## TC-004-01: Checkout completo con un producto
 - **Prioridad:** Alta
@@ -20,7 +17,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-004-02: Checkout completo con multiples productos
 - **Prioridad:** Alta
@@ -34,7 +30,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-004-03: Checkout sin nombre
 - **Prioridad:** Alta
@@ -47,7 +42,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-004-04: Checkout sin apellido
 - **Prioridad:** Alta
@@ -59,7 +53,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-004-05: Checkout sin codigo postal
 - **Prioridad:** Alta
@@ -71,7 +64,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-004-06: Cancelar checkout
 - **Prioridad:** Media
@@ -83,7 +75,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-004-07: Volver al home despues de comprar
 - **Prioridad:** Baja
