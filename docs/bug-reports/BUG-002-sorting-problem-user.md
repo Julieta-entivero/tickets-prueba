@@ -1,4 +1,4 @@
-# BUG-002: Ordenamiento no funciona con problem_user
+# BUG-002: Ordenamiento no funciona con problem user
 **Ticket relacionado:** SHOP-202
 **Severidad:** Media
 **Prioridad:** Media
@@ -7,10 +7,8 @@
 **Fecha:** 19/03/2026
 **Ambiente:** Chrome 122 / Windows 11
 
----
-
 ## Descripcion
-Con el usuario `problem_user`, al cambiar el criterio de ordenamiento en el dropdown, los productos no se reordenan. Siempre quedan en el mismo orden sin importar la opcion seleccionada.
+Con el usuario 'problem_user', al cambiar el criterio de ordenamiento en el dropdown, los productos no se reordenan. Siempre quedan en el mismo orden sin importar la opcion seleccionada.
 
 ## Pasos para reproducir
 1. Login con problem_user / secret_sauce
