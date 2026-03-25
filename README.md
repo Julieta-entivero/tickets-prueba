@@ -33,20 +33,31 @@ docs/
 ## Tickets validados
 
 | Ticket | Modulo | Tests | Estado |
-|--------|--------|-------|--------|
+
 | SHOP-101 | Login | 5 | Validado |
+
 | SHOP-102 | Login bloqueado | 1 | Validado |
+
 | SHOP-201 | Catalogo | 2 | Validado |
+
 | SHOP-202 | Ordenamiento | 4 | Validado |
+
 | SHOP-203 | Detalle producto | 2 | Validado |
+
 | SHOP-301 | Carrito - agregar | 3 | Validado |
+
 | SHOP-302 | Carrito - pagina | 4 | Validado |
+
 | SHOP-401 | Checkout E2E | 2 | Validado |
+
 | SHOP-402 | Checkout validaciones | 3 | Validado |
+
 | SHOP-403 | Checkout cancelar | 2 | Validado |
+
 | SHOP-501 | Logout | 2 | Validado |
 
-**Total: 11 tickets - 30 test cases automatizados**
+
+Total: 11 tickets - 30 test cases automatizados
 
 ## Como correr
 
