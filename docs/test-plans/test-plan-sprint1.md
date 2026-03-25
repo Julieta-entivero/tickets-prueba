@@ -1,10 +1,7 @@
 # Test Plan - Sprint 1
 **Proyecto:** SauceDemo E-Commerce
 **Version:** 1.0
-**Fecha:** 10/03/2026
 **QA:** Julieta Entivero
-
----
 
 ## Objetivo
 Validar las funcionalidades principales del sitio: login, catalogo de productos, carrito de compras y flujo de checkout.
@@ -32,7 +29,7 @@ Validar las funcionalidades principales del sitio: login, catalogo de productos,
 ## Usuarios de prueba
 
 | Usuario | Password | Comportamiento esperado |
-|---------|----------|------------------------|
+
 | standard_user | secret_sauce | Login exitoso |
 | locked_out_user | secret_sauce | Error: usuario bloqueado |
 | problem_user | secret_sauce | Login con bugs visuales |
@@ -40,7 +37,7 @@ Validar las funcionalidades principales del sitio: login, catalogo de productos,
 ## Matriz de tickets y test cases
 
 | Ticket | Modulo | Test Case | Prioridad |
-|--------|--------|-----------|-----------|
+
 | SHOP-101 | Login | TC-001: Login valido e invalido | Alta |
 | SHOP-102 | Login | TC-001: Usuario bloqueado | Alta |
 | SHOP-201 | Catalogo | TC-002: Carga de productos | Alta |
