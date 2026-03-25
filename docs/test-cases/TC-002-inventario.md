@@ -2,9 +2,6 @@
 **Tickets:** SHOP-201, SHOP-202, SHOP-203
 **Modulo:** Catalogo de Productos
 **QA:** Julieta Entivero
-**Ultima actualizacion:** 17/03/2026
-
----
 
 ## TC-002-01: Se muestran todos los productos
 - **Prioridad:** Alta
@@ -16,7 +13,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-002-02: Ordenar por precio de menor a mayor
 - **Prioridad:** Media
@@ -29,7 +25,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-002-03: Ordenar por precio de mayor a menor
 - **Prioridad:** Media
@@ -55,7 +50,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-002-05: Ordenar por nombre Z-A
 - **Prioridad:** Baja
@@ -68,7 +62,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-002-06: Ver detalle de un producto
 - **Prioridad:** Media
@@ -81,7 +74,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-002-07: Volver al catalogo desde el detalle
 - **Prioridad:** Baja
