@@ -2,9 +2,6 @@
 **Tickets:** SHOP-301, SHOP-302
 **Modulo:** Carrito de Compras
 **QA:** Julieta Entivero
-**Ultima actualizacion:** 19/03/2026
-
----
 
 ## TC-003-01: Agregar un producto al carrito
 - **Prioridad:** Alta
@@ -17,7 +14,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-003-02: Agregar multiples productos
 - **Prioridad:** Alta
@@ -30,7 +26,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-003-03: Remover producto desde el catalogo
 - **Prioridad:** Alta
@@ -43,8 +38,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
-
 ## TC-003-04: Verificar producto en la pagina del carrito
 - **Prioridad:** Alta
 - **Ticket:** SHOP-302
@@ -56,7 +49,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-003-05: Remover producto desde la pagina del carrito
 - **Prioridad:** Media
@@ -69,7 +61,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-003-06: Carrito vacio
 - **Prioridad:** Media
@@ -81,7 +72,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si
 
----
 
 ## TC-003-07: Volver al catalogo desde el carrito
 - **Prioridad:** Baja
