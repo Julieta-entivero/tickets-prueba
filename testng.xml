@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Tickets Validation Suite" parallel="classes" thread-count="2">
+
+    <test name="SHOP-101 SHOP-102 - Login">
+        <classes>
+            <class name="com.ticketsprueba.tests.TC001_LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="SHOP-201 SHOP-202 SHOP-203 - Inventario">
+        <classes>
+            <class name="com.ticketsprueba.tests.TC002_InventoryTest"/>
+        </classes>
+    </test>
+
+    <test name="SHOP-301 SHOP-302 - Carrito">
+        <classes>
+            <class name="com.ticketsprueba.tests.TC003_CartTest"/>
+        </classes>
+    </test>
+
+    <test name="SHOP-401 SHOP-402 SHOP-403 - Checkout">
+        <classes>
+            <class name="com.ticketsprueba.tests.TC004_CheckoutTest"/>
+        </classes>
+    </test>
+
+    <test name="SHOP-501 - Logout">
+        <classes>
+            <class name="com.ticketsprueba.tests.TC005_LogoutTest"/>
+        </classes>
+    </test>
+
+</suite>
