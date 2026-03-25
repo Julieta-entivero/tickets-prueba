@@ -2,9 +2,6 @@
 **Ticket:** SHOP-101, SHOP-102
 **Modulo:** Autenticacion
 **QA:** Julieta Entivero
-**Ultima actualizacion:** 15/03/2026
-
----
 
 ## TC-001-01: Login exitoso con credenciales validas
 - **Prioridad:** Alta
@@ -18,8 +15,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si - TC001_loginConUsuarioValido()
 
----
-
 ## TC-001-02: Login con usuario incorrecto
 - **Prioridad:** Alta
 - **Tipo:** Funcional - Negativo
@@ -31,8 +26,6 @@
 - **Resultado esperado:** Se muestra mensaje de error que contiene "do not match"
 - **Estado:** PASS
 - **Automatizado:** Si - TC001_loginConUsuarioIncorrecto()
-
----
 
 ## TC-001-03: Login con password incorrecta
 - **Prioridad:** Alta
@@ -46,8 +39,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si - TC001_loginConPasswordIncorrecta()
 
----
-
 ## TC-001-04: Login sin usuario
 - **Prioridad:** Media
 - **Tipo:** Funcional - Negativo
@@ -60,8 +51,6 @@
 - **Estado:** PASS
 - **Automatizado:** Si - TC001_loginSinUsuario()
 
----
-
 ## TC-001-05: Login sin password
 - **Prioridad:** Media
 - **Tipo:** Funcional - Negativo
@@ -73,8 +62,6 @@
 - **Resultado esperado:** Mensaje de error "Password is required"
 - **Estado:** PASS
 - **Automatizado:** Si - TC001_loginSinPassword()
-
----
 
 ## TC-001-06: Login con usuario bloqueado (SHOP-102)
 - **Prioridad:** Alta
