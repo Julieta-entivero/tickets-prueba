@@ -1,6 +1,7 @@
 package com.ticketsprueba.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -111,7 +112,7 @@ public class InventoryPage extends BasePage {
                 return Double.parseDouble(raw.replace("$", ""));
             }
         }
-        return -1;
+        throw new NoSuchElementException("Producto no encontrado: " + name);
     }
 
     public ItemDetailPage clickItemByName(String name) {
@@ -122,7 +123,7 @@ public class InventoryPage extends BasePage {
                 return new ItemDetailPage(driver);
             }
         }
-        return null;
+        throw new NoSuchElementException("Producto no encontrado: " + name);
     }
 
     public void logout() {

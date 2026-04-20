@@ -4,6 +4,7 @@ import com.ticketsprueba.base.BaseTest;
 import com.ticketsprueba.pages.LoginPage;
 import com.ticketsprueba.pages.InventoryPage;
 import com.ticketsprueba.pages.ItemDetailPage;
+import com.ticketsprueba.utils.ConfigReader;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -19,11 +20,13 @@ import java.util.List;
 public class TC002_InventoryTest extends BaseTest {
 
     private InventoryPage inventoryPage;
+    private final String USER = ConfigReader.get("standard.user");
+    private final String PASS = ConfigReader.get("standard.password");
 
     @BeforeMethod
     public void loginAndInit() {
         LoginPage login = new LoginPage(driver);
-        inventoryPage = login.loginAs("standard_user", "secret_sauce");
+        inventoryPage = login.loginAs(USER, PASS);
     }
 
     @Test(description = "SHOP-201 | Se muestran 6 productos en el catalogo")

@@ -3,6 +3,7 @@ package com.ticketsprueba.tests;
 import com.ticketsprueba.base.BaseTest;
 import com.ticketsprueba.pages.LoginPage;
 import com.ticketsprueba.pages.InventoryPage;
+import com.ticketsprueba.utils.ConfigReader;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,11 +17,13 @@ import org.testng.annotations.Test;
 public class TC005_LogoutTest extends BaseTest {
 
     private InventoryPage inventoryPage;
+    private final String USER = ConfigReader.get("standard.user");
+    private final String PASS = ConfigReader.get("standard.password");
 
     @BeforeMethod
     public void loginAndInit() {
         LoginPage login = new LoginPage(driver);
-        inventoryPage = login.loginAs("standard_user", "secret_sauce");
+        inventoryPage = login.loginAs(USER, PASS);
     }
 
     @Test(description = "SHOP-501 | Logout redirige al login")
@@ -32,10 +35,10 @@ public class TC005_LogoutTest extends BaseTest {
             "No se redirigio al login despues del logout");
     }
 
-    @Test(description = "SHOP-501 | URL despues de logout es la de login")
+    @Test(description = "SHOP-501 | URL despues de logout no contiene inventory")
     public void TC005_urlDespuesDeLogout() {
         inventoryPage.logout();
-        Assert.assertTrue(driver.getCurrentUrl().contains("saucedemo.com"),
-            "La URL no corresponde al login");
+        Assert.assertFalse(driver.getCurrentUrl().contains("/inventory.html"),
+            "La URL todavia contiene /inventory.html despues del logout");
     }
 }

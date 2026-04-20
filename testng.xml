@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Tickets Validation Suite" parallel="classes" thread-count="2">
 
+    <listeners>
+        <listener class-name="com.ticketsprueba.listeners.ScreenshotListener"/>
+    </listeners>
+
     <test name="SHOP-101 SHOP-102 - Login">
         <classes>
             <class name="com.ticketsprueba.tests.TC001_LoginTest"/>

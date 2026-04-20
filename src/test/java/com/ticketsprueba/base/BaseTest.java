@@ -1,5 +1,6 @@
 package com.ticketsprueba.base;
 
+import com.ticketsprueba.utils.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,8 +10,9 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
 
+    private static final ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
+
     protected WebDriver driver;
-    protected static final String URL = "https://www.saucedemo.com/";
 
     @BeforeMethod
     public void setUp() {
@@ -22,11 +24,12 @@ public class BaseTest {
         if ("true".equals(headless)) {
             options.addArguments("--headless");
             options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
         }
 
         driver = new ChromeDriver(options);
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(5));
-        driver.get(URL);
+        driverThreadLocal.set(driver);
+        driver.get(ConfigReader.get("base.url"));
     }
 
     @AfterMethod
@@ -34,5 +37,10 @@ public class BaseTest {
         if (driver != null) {
             driver.quit();
         }
+        driverThreadLocal.remove();
+    }
+
+    public WebDriver getDriver() {
+        return driverThreadLocal.get();
     }
 }

@@ -2,6 +2,7 @@ package com.ticketsprueba.tests;
 
 import com.ticketsprueba.base.BaseTest;
 import com.ticketsprueba.pages.*;
+import com.ticketsprueba.utils.ConfigReader;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -15,11 +16,13 @@ import org.testng.annotations.Test;
 public class TC004_CheckoutTest extends BaseTest {
 
     private InventoryPage inventoryPage;
+    private final String USER = ConfigReader.get("standard.user");
+    private final String PASS = ConfigReader.get("standard.password");
 
     @BeforeMethod
     public void loginAndInit() {
         LoginPage login = new LoginPage(driver);
-        inventoryPage = login.loginAs("standard_user", "secret_sauce");
+        inventoryPage = login.loginAs(USER, PASS);
     }
 
     @Test(description = "SHOP-401 | Checkout completo E2E - un producto")

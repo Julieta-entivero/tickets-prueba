@@ -4,7 +4,8 @@
 **Prioridad:** Alta
 **Estado:** Abierto
 **Reportado por:** Julieta Entivero
-
+**Fecha:** 20/03/2026
+**Ambiente:** Chrome (ultima version estable) / Windows 11
 
 ## Descripcion
 Con 'problem_user', al hacer click en "Add to cart" de un producto, el carrito agrega un producto diferente al que se selecciono.

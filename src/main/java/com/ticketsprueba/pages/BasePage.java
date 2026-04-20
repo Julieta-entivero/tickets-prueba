@@ -1,5 +1,8 @@
 package com.ticketsprueba.pages;
 
+import com.ticketsprueba.utils.ConfigReader;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -7,7 +10,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
-import java.util.List;
 
 public class BasePage {
 
@@ -16,7 +18,8 @@ public class BasePage {
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        int timeout = ConfigReader.getInt("explicit.wait.seconds");
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
         PageFactory.initElements(driver, this);
     }
 
@@ -36,12 +39,10 @@ public class BasePage {
         return element.getText();
     }
 
-    // fix: antes usaba wait aca y tardaba mucho cuando el elemento no existia
-    // cambie para que solo haga isDisplayed sin esperar
     protected boolean isDisplayed(WebElement element) {
         try {
             return element.isDisplayed();
-        } catch (Exception e) {
+        } catch (NoSuchElementException | StaleElementReferenceException e) {
             return false;
         }
     }
